@@ -1,0 +1,13 @@
+# 将用于 PDC 的标识
+id: vmtoolsd
+# 用于网页端的 app 名称展示
+alias: vmtoolsd
+# 版本号, 建议与 github 的 tag 保持一致
+version: 0.0.1
+# 关于该 app 的简单描述, 用于网页端展示
+description: 'x86_64下的vmtoolsd'
+# 用于网页端提示用户该 app 是否为测试版
+beta: true
+
+# !无需手动填写, 从远程源下载而来的 app 将会自动添加该节点
+remote-tag: 1.x.x
