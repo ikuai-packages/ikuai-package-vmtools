@@ -375,7 +375,7 @@ runcmd "/tmp/umask.txt" umask
 case `uname` in
 Linux)
    stageLinux
-   #	tar options: 'S' for sparse core files.
+   #	tar options: 'S' for sparse files files.
    TAR_OPTS=-czSf
    ;;
 FreeBSD)
