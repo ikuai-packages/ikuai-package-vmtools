@@ -4,7 +4,7 @@ start_vmtoolsd(){
     # libgmodule和libgobject等库和系统本身的库文件有重叠，不适合直接覆盖/复制
     # 启动vmtoolsd需要设置LD_LIBRARY_PATH参数，该参数会被ld-linux-x86-64.so.2读取
     # 之后LD_LIBRARY_PATH下的链接库会被优先选中
-    cd $INSTALL_DIR && LD_LIBRARY_PATH=. ./bin/vmtoolsd 2>/dev/null &
+    cd $INSTALL_DIR && LD_LIBRARY_PATH=. ./files/bin/vmtoolsd 2>/dev/null &
     echo 'tried to start vmtoolsd'
     echo "vmtoolsd pid is $(pidof vmtoolsd)"
 }
